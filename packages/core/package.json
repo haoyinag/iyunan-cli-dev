@@ -21,5 +21,6 @@
   },
   "dependencies": {
     "@iyunan-cli-dev/utils": "^0.0.2"
-  }
+  },
+  "gitHead": "d6ccc780b7b0a9bb6e3fbd140e726cb608513053"
 }
