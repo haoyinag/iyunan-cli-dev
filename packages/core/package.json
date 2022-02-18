@@ -1,6 +1,6 @@
 {
   "name": "@iyunan-cli-dev/core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "> TODO: description",
   "author": "郁南 <haoyinag0@hotmail.com>",
   "homepage": "",
@@ -20,6 +20,6 @@
     "test": "echo Error: run tests from core"
   },
   "dependencies": {
-    "@iyunan-cli-dev/utils": "^0.0.1"
+    "@iyunan-cli-dev/utils": "^0.0.2"
   }
 }
