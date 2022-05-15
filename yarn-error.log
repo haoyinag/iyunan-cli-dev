@@ -1,0 +1,59 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add @iyunan-cli-dev/core
+
+PATH: 
+  /usr/local/Cellar/mongodb/4.2/bin/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/chenhaoyin/.cargo/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  16.13.2
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/chenhaoyin/Library/Caches/Yarn/v6/npm-is-fullwidth-code-point-1.0.0-ef9e31386f031a7f0d643af82fde50c457ef00cb-integrity/node_modules/is-fullwidth-code-point/license' -> '/Users/chenhaoyin/Documents/Mine/Github/iyunan-cli/node_modules/gauge/node_modules/is-fullwidth-code-point/license'
+
+npm manifest: 
+  {
+    "name": "iyunan-cli-dev",
+    "version": "1.0.1",
+    "description": "iyunan-cli dev",
+    "main": "index.js",
+    "scripts": {
+      "test": "tap",
+      "lint": "eslint '**/*.js'",
+      "postlint": "npm-template-check",
+      "template-copy": "npm-template-copy --force",
+      "lintfix": "npm run lint -- --fix",
+      "preversion": "npm test",
+      "postversion": "npm publish",
+      "prepublishOnly": "git push origin --follow-tags",
+      "snap": "tap",
+      "posttest": "npm run lint"
+    },
+    "keywords": [],
+    "author": "Yunan",
+    "license": "ISC",
+    "devDependencies": {
+      "lerna": "^4.0.0"
+    },
+    "files": [
+      "bin",
+      "lib"
+    ],
+    "engines": {
+      "node": "^12.13.0 || ^14.15.0 || >=16"
+    },
+    "templateOSS": {
+      "version": "2.9.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,7 +1,7 @@
 # This file is automatically added by @npmcli/template-oss. Do not edit.
 
-# ignore everything in the root
-/*
+# ignore 
+node_modules
 
 # keep these
 !/.commitlintrc.js
@@ -21,3 +21,7 @@
 !/LICENSE*
 !/SECURITY*
 !/CHANGELOG*
+
+
+.history
+.vscode
