@@ -16,10 +16,9 @@
     "posttest": "npm run lint"
   },
   "keywords": [],
-  "author": "GitHub Inc.",
+  "author": "Yunan",
   "license": "ISC",
   "devDependencies": {
-    "@iyunan-cli/core": "file:./core/cli",
     "lerna": "^4.0.0"
   },
   "files": [
