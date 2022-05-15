@@ -19,8 +19,8 @@
   "author": "GitHub Inc.",
   "license": "ISC",
   "devDependencies": {
-    "lerna": "^4.0.0",
-    "@iyunan-cli/core": "file:./core/cli"
+    "@iyunan-cli/core": "file:./core/cli",
+    "lerna": "^4.0.0"
   },
   "files": [
     "bin",
