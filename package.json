@@ -1,6 +1,6 @@
 {
   "name": "iyunan-cli-dev",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "iyunan-cli dev",
   "main": "index.js",
   "scripts": {
