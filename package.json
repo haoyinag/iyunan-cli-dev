@@ -19,6 +19,7 @@
   "author": "Yunan",
   "license": "ISC",
   "devDependencies": {
+    "@iyunan-cli-dev/core": "^0.0.3",
     "lerna": "^4.0.0"
   },
   "files": [
