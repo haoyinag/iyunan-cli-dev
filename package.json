@@ -1,5 +1,5 @@
 {
-  "name": "iyunan-cli",
+  "name": "iyunan-cli-dev",
   "version": "1.0.0",
   "description": "iyunan-cli dev",
   "main": "index.js",
@@ -20,7 +20,7 @@
   "license": "ISC",
   "devDependencies": {
     "lerna": "^4.0.0",
-    "@iyunan-cli/core": "file:./packages/core"
+    "@iyunan-cli/core": "file:./core/cli"
   },
   "files": [
     "bin",
@@ -30,6 +30,6 @@
     "node": "^12.13.0 || ^14.15.0 || >=16"
   },
   "templateOSS": {
-    "version": "2.8.1"
+    "version": "2.9.2"
   }
 }

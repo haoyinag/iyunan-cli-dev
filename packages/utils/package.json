@@ -1,11 +1,11 @@
-{
+{ 
   "name": "@iyunan-cli-dev/utils",
   "version": "0.0.3",
   "description": "> TODO: description",
   "author": "郁南 <haoyinag0@hotmail.com>",
-  "homepage": "",
+  "homepage": "https://github.com/haoyinag/iyunan-cli-dev#readme",
   "license": "ISC",
-  "main": "lib/index.js",
+  "main": "lib/utils.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -13,11 +13,17 @@
   "files": [
     "lib"
   ],
-  "publishConfig": {
-    "access": "public"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haoyinag/iyunan-cli-dev.git"
   },
   "scripts": {
-    "test": "echo Error: run tests from utils"
+    "test": "echo \"Error: run tests from utils\""
   },
-  "gitHead": "d6ccc780b7b0a9bb6e3fbd140e726cb608513053"
+  "bugs": {
+    "url": "https://github.com/haoyinag/iyunan-cli-dev/issues"
+  },
+  "dependencies": {
+    "@iyunan-cli-dev/utils": "^0.0.3"
+  }
 }
