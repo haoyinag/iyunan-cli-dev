@@ -1,6 +1,11 @@
-42 error Error: Command failed with exit code 128: git tag v0.0.1 -m v0.0.1
-42 error fatal: tag 'v0.0.1' already exists
-42 error     at makeError (/Users/chenhaoyin/Documents/Mine/Github/iyunan-cli/node_modules/execa/lib/error.js:60:11)
-42 error     at handlePromise (/Users/chenhaoyin/Documents/Mine/Github/iyunan-cli/node_modules/execa/index.js:118:26)
-42 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-42 error     at async Promise.all (index 0)
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   globs: [],
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': 'lerna',
+0 silly argv   pkg: '@iyunan-cli-dev/log'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath /Users/chenhaoyin/Documents/Mine/Github/iyunan-cli
+3 error HttpErrorGeneral: 404 Not Found - GET https://registry.npmjs.org/@iyunan-cli-dev%2flog - Not found
+3 error     at /Users/chenhaoyin/Documents/Mine/Github/iyunan-cli/node_modules/npm-registry-fetch/check-response.js:95:15
