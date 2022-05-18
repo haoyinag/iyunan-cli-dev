@@ -2,7 +2,7 @@
  * @Author: 郁南
  * @LastEditors: 郁南
  * @Date: 2022-02-17 08:02:59
- * @LastEditTime: 2022-05-18 19:41:49
+ * @LastEditTime: 2022-05-18 22:53:21
  * @FilePath: /iyunan-cli/core/cli/lib/index.js
  * @Description:
  */
@@ -22,16 +22,25 @@ const pkg = require("../package.json");
 
 module.exports = core;
 
-console.log(process.argv.slice(2).length);
-
 // core
 function core() {
   try {
+    checkRoot();
     checkPkgVersion();
     checkNodeVersion();
   } catch (error) {
     log.error(error.message);
   }
+}
+
+// 判断是否root用户
+function checkRoot() {
+  /**
+   * 也可以用process.geteuid()获取，
+   *  0的时候是root，否则不是。但不严谨
+   */
+  const __checkRoot = require("root-check");
+  __checkRoot();
 }
 
 // 查询package.json版本号
