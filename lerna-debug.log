@@ -1,10 +1,6 @@
-15 error Error: Command failed with exit code 1: git remote update
-15 error fatal: unable to access 'https://github.com/haoyinag/iyunan-cli-dev.git/': HTTP/2 stream 1 was not closed cleanly before end of the underlying stream
-15 error error: Could not fetch origin
-15 error Fetching origin
-15 error     at makeError (/Users/chenhaoyin/Documents/Mine/Github/iyunan-cli/node_modules/_execa@5.1.1@execa/lib/error.js:60:11)
-15 error     at Function.module.exports.sync (/Users/chenhaoyin/Documents/Mine/Github/iyunan-cli/node_modules/_execa@5.1.1@execa/index.js:194:17)
-15 error     at Object.execSync (/Users/chenhaoyin/Documents/Mine/Github/iyunan-cli/node_modules/_@lerna_child-process@4.0.0@@lerna/child-process/index.js:39:16)
-15 error     at updateRemote (/Users/chenhaoyin/Documents/Mine/Github/iyunan-cli/node_modules/_@lerna_version@4.0.0@@lerna/version/lib/is-behind-upstream.js:34:16)
-15 error     at isBehindUpstream (/Users/chenhaoyin/Documents/Mine/Github/iyunan-cli/node_modules/_@lerna_version@4.0.0@@lerna/version/lib/is-behind-upstream.js:16:3)
-15 error     at VersionCommand.initialize (/Users/chenhaoyin/Documents/Mine/Github/iyunan-cli/node_modules/_@lerna_version@4.0.0@@lerna/version/index.js:153:9)
+42 error Error: Command failed with exit code 128: git tag v0.0.1 -m v0.0.1
+42 error fatal: tag 'v0.0.1' already exists
+42 error     at makeError (/Users/chenhaoyin/Documents/Mine/Github/iyunan-cli/node_modules/execa/lib/error.js:60:11)
+42 error     at handlePromise (/Users/chenhaoyin/Documents/Mine/Github/iyunan-cli/node_modules/execa/index.js:118:26)
+42 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+42 error     at async Promise.all (index 0)
