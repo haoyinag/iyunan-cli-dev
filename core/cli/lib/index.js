@@ -2,7 +2,7 @@
  * @Author: 郁南
  * @LastEditors: 郁南
  * @Date: 2022-02-17 08:02:59
- * @LastEditTime: 2022-05-19 00:27:04
+ * @LastEditTime: 2022-05-19 16:43:36
  * @FilePath: /iyunan-cli/core/cli/lib/index.js
  * @Description:
  */
@@ -20,6 +20,7 @@ const colors = require("colors/safe");
 const userHome = require("user-home");
 const pathExists = require("path-exists").sync;
 const log = require("@iyunan-cli-dev/log");
+const { getNpmSemverVersion } = require("@iyunan-cli-dev/get-npm-info");
 
 const constant = require("./constant");
 const pkg = require("../package.json");
@@ -38,7 +39,8 @@ function core() {
     checkInputArgs(); // 判断入参
 
     checkEnv(); // 查询环境变量
-    // log.verbose("debug", "debug 测试...");
+
+    checkGlobalUpdate();
   } catch (error) {
     log.error(error.message);
   }
@@ -112,7 +114,7 @@ function checkEnv() {
 
   // 配置默认路径home和cliHome字段
   config = createDefaultConfig();
-  log.verbose("环境变量", config);
+  log.verbose("环境变量", process.env.CLI_HOME_PATH);
 }
 
 // 创建默认配置
@@ -127,5 +129,27 @@ function createDefaultConfig() {
     process.env.CLI_HOME ? process.env.CLI_HOME : constant.DEFAULT_CLI_HOME
   );
 
+  // 新增环境变量 CLI_HOME_PATH
+  process.env.CLI_HOME_PATH = cliConfig.cliHome;
+
   return cliConfig;
+}
+
+// 处理npmName版本信息
+async function checkGlobalUpdate() {
+  // 1. 获取当前版本号和模块名
+  // 2. 调用npm api 获取所有版本号
+  // 3. 获取所有版本号，比对哪些版本号是大于当前版本号的
+  // 4. 获取最新的版本号，提示用户升级版本号
+  const pkgVersion = pkg.version;
+  const pkgName = pkg.name;
+  const lastVersion = await getNpmSemverVersion(pkgVersion, pkgName);
+  if (lastVersion && semver.gt(lastVersion, pkgVersion)) {
+    log.warn(
+      "提示：",
+      colors.yellow(
+        `请手动更新 ${pkgName}，当前版本：${pkgVersion}，最新版本：${lastVersion}。更新命令：npm i -g ${pkgName}`
+      )
+    );
+  }
 }

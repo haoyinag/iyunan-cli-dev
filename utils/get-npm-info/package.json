@@ -1,0 +1,31 @@
+{
+  "name": "get-npm-info",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "郁南 <haoyinag0@hotmail.com>",
+  "homepage": "https://github.com/haoyinag/iyunan-cli-dev#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haoyinag/iyunan-cli-dev.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/haoyinag/iyunan-cli-dev/issues"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "semver": "^7.3.7",
+    "url-join": "^4.0.1"
+  }
+}
