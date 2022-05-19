@@ -25,3 +25,5 @@ node_modules
 
 .history
 .vscode
+
+lerna-debug.log
