@@ -1,6 +1,6 @@
 {
   "name": "@iyunan-cli-dev/core",
-  "version": "0.0.4",
+  "version": "0.0.2",
   "description": "> TODO: description",
   "author": "郁南 <haoyinag0@hotmail.com>",
   "homepage": "",
@@ -23,9 +23,9 @@
     "test": "echo Error: run tests from core"
   },
   "dependencies": {
+    "@iyunan-cli-dev/get-npm-info": "file:../../utils/get-npm-info",
     "@iyunan-cli-dev/log": "file:../../utils/log",
     "@iyunan-cli-dev/utils": "file:../../utils/utils",
-    "@iyunan-cli-dev/get-npm-info": "file:../../utils/get-npm-info",
     "colors": "^1.4.0",
     "dotenv": "^16.0.1",
     "import-local": "^3.1.0",
