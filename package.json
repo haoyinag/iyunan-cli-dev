@@ -9,7 +9,7 @@
   "author": "Yunan",
   "license": "ISC",
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "lerna": "^5.1.2"
   },
   "files": [
     "bin",
